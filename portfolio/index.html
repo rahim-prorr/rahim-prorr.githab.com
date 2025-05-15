@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Портфолио разработчика</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Russo+One&family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <h1>Портфолио разработчика</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#prices">Цены</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Основная секция -->
+    <main>
+        <section id="about">
+            <h2>Обо мне</h2>
+            <article>
+                <p>Меня зовут Оздоев Рахим, я разработчик интерфейсов.<br>
+                   <br>Я создаю стильные и удобные веб-интерфейсы,  а так же фирменные стили для компаний.<br>
+                   <br>Цель моей работы — гармонично сочетать красоту дизайна и удобство использования.<br>
+                   <br>Моё портфолио демонстрирует широкий диапазон работ: от простых лендингов до сложных корпоративных приложений.<br>
+                   <br>Ваша задача станет выразительной частью успешного бизнеса!<br>
+                </p>
+            </article>
+        </section>
+        
+        <section id="projects">
+            <h2>Проекты</h2>
+            <div class="grid-container">
+                <div class="project">
+                    <img src="./Снимок экрана (5).png" alt="Проект 1">
+                    <h3>Тема Банка</h3>
+                </div>
+                <div class="project">
+                    <img src="./Снимок экрана (6).png" alt="Проект 2">
+                    <h3>Тема для сотрудников компании</h3>
+                </div>
+                <div class="project">
+                    <img src="./Снимок экрана (8).png" alt="Проект 3">
+                    <h3>Тема строительства</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="prices">
+            <h2>Цены</h2>
+            <table>
+                <tr>
+                    <th>Тип услуги</th>
+                    <th>Стоимость</th>
+                </tr>
+            
+
+<tr>
+                    <td>HTML + CSS простой дизайн</td>
+                    <td>От 2000 ₽ до 5000 ₽</td>
+                </tr>
+                <tr>
+                    <td>HTML + CSS + JavaScript средней сложности</td>
+                    <td>От 5000 ₽ до 10000 ₽</td>
+                </tr>
+                <tr>
+                    <td>HTML + CSS + JavaScript сложный дизайн</td>
+                    <td>От 10000 ₽ до 20000 ₽</td>
+                </tr>
+            </table>
+        </section>
+        
+        <section id="contact">
+            <h2>Контакты</h2>
+            <form action="#" method="POST">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <button type="submit">Отправить сообщение</button>
+            </form>
+        </section>
+        <div id="back-to-top-button">
+            <a href="#top"><i class="fas fa-arrow-up"></i> Наверх</a>
+        </div>
+    </main>
+    
+    <!-- Подвал -->
+    <footer>
+        <p>© 2025 Портфолио разработчика <br>подробно по номеру телефона: +7928-918-41-28 WhatsApp
+        </p>
+    </footer>
+    
+    <script>
+        // Скрипт для плавного перемещения по странице
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener('click', function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
